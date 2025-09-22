@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/UbaniHostingNew/', // Set base for GitHub Pages
+  base: './', // Use relative paths for GitHub Pages
   build: {
-    outDir: 'docs', // Output to 'docs' for GitHub Pages
+    outDir: 'dist', // Standard output directory
   },
   plugins: [react()],
   optimizeDeps: {
