@@ -23,11 +23,21 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300">074 895 3557</span>
+                <a href="tel:0748953557" className="text-gray-300 hover:text-white transition-colors">074 895 3557</a>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-blue-400" />
                 <span className="text-gray-300">Johannesburg, South Africa</span>
+              </div>
+              <div className="flex items-center space-x-2 mt-2">
+                <a
+                  href="https://wa.me/27748953557"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors duration-200 text-sm font-medium"
+                >
+                  WhatsApp Us
+                </a>
               </div>
             </div>
           </div>

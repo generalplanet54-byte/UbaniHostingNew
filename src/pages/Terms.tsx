@@ -255,9 +255,25 @@ const Terms = () => {
               If you have any questions about these Terms of Service, please don't hesitate to contact us.
             </p>
             <div className="space-y-2">
-              <p><strong>Email:</strong> support@ubanihosting.co.za</p>
-              <p><strong>Phone:</strong> 074 895 3557</p>
+              <p><strong>Email:</strong> <a href="mailto:support@ubanihosting.co.za" className="text-blue-200 hover:text-white underline">support@ubanihosting.co.za</a></p>
+              <p><strong>Phone:</strong> <a href="tel:0748953557" className="text-blue-200 hover:text-white underline">074 895 3557</a></p>
               <p><strong>Address:</strong> Johannesburg, South Africa</p>
+            </div>
+            <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="mailto:support@ubanihosting.co.za"
+                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200"
+              >
+                Email Us
+              </a>
+              <a
+                href="https://wa.me/27748953557"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors duration-200"
+              >
+                WhatsApp
+              </a>
             </div>
           </section>
         </div>

@@ -68,12 +68,12 @@ const Home = () => {
               >
                 View Hosting Plans
               </Link>
-              <Link
-                to="/contact"
+              <a
+                href="tel:0748953557"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200 inline-block"
               >
-                Get Started
-              </Link>
+                Call Now: 074 895 3557
+              </a>
             </div>
           </div>
         </div>
@@ -210,12 +210,22 @@ const Home = () => {
           <p className="text-xl mb-8 text-blue-100">
             Join hundreds of South African businesses who trust Ubani Hosting for their web presence.
           </p>
-          <Link
-            to="/contact"
-            className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200 inline-block"
-          >
-            Contact Us Today
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/contact"
+              className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200 inline-block"
+            >
+              Get Quote
+            </Link>
+            <a
+              href="https://wa.me/27748953557"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-colors duration-200 inline-block"
+            >
+              WhatsApp Us
+            </a>
+          </div>
         </div>
       </section>
     </div>

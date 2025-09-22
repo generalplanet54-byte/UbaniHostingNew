@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Server } from 'lucide-react';
+import { Menu, X, Server, Phone } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +25,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -39,6 +39,13 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
+            <a
+              href="tel:0748953557"
+              className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200"
+            >
+              <Phone className="h-4 w-4" />
+              <span className="text-sm font-medium">074 895 3557</span>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -67,6 +74,13 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
+            <a
+              href="tel:0748953557"
+              className="flex items-center justify-center space-x-2 mx-4 mt-2 bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200"
+            >
+              <Phone className="h-4 w-4" />
+              <span className="text-sm font-medium">074 895 3557</span>
+            </a>
           </div>
         )}
       </nav>

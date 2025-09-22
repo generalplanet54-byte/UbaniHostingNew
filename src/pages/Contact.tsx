@@ -42,7 +42,11 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6 text-blue-600" />,
       title: "Phone Support", 
-      details: "074 895 3557",
+      details: (
+        <a href="tel:0748953557" className="text-blue-600 hover:text-blue-800 transition-colors">
+          074 895 3557
+        </a>
+      ),
       description: "Business hours: Monday - Friday"
     },
     {
@@ -201,7 +205,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">{info.title}</h3>
-                      <p className="text-lg text-blue-600 font-medium">{info.details}</p>
+                      <div className="text-lg text-blue-600 font-medium">{info.details}</div>
                       <p className="text-gray-600 text-sm">{info.description}</p>
                     </div>
                   </div>
@@ -232,6 +236,22 @@ const Contact = () => {
                   For hosting emergencies and critical technical issues, 
                   our support team is available around the clock.
                 </p>
+                <div className="mt-4 flex flex-col sm:flex-row gap-3">
+                  <a
+                    href="tel:0748953557"
+                    className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 text-center text-sm font-medium"
+                  >
+                    Call Now
+                  </a>
+                  <a
+                    href="https://wa.me/27748953557"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors duration-200 text-center text-sm font-medium"
+                  >
+                    WhatsApp
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -270,7 +290,7 @@ const Contact = () => {
             
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Do you offer website migration services?</h3>
-              <p className="text-gray-600">Yes! We offer free basic migration with new hosting accounts, or professional migration services starting at R2,500.</p>
+              <p className="text-gray-600">Yes! We offer free basic migration with new hosting accounts, or professional migration services starting at R2,500. <Link to="/services" className="text-blue-600 hover:text-blue-800 underline">View our migration services</Link>.</p>
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-lg">
@@ -281,6 +301,18 @@ const Contact = () => {
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Is technical support really available 24/7?</h3>
               <p className="text-gray-600">Yes! Our technical support team is available 24/7 for hosting emergencies and critical issues affecting your website's availability.</p>
+            </div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <p className="text-lg text-gray-600 mb-6">Still have questions? Get in touch!</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="tel:0748953557" className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200">
+                Call: 074 895 3557
+              </a>
+              <a href="https://wa.me/27748953557" target="_blank" rel="noopener noreferrer" className="bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-colors duration-200">
+                WhatsApp Us
+              </a>
             </div>
           </div>
         </section>

@@ -130,7 +130,9 @@ const Services = () => {
                     ? 'bg-blue-600 text-white hover:bg-blue-700' 
                     : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
                 }`}>
-                  Get Started
+                  <Link to="/contact" className="block w-full h-full">
+                    Get Started
+                  </Link>
                 </button>
               </div>
             ))}
@@ -212,9 +214,12 @@ const Services = () => {
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{service.service}</h3>
                 <div className="text-3xl font-bold text-blue-600 mb-4">{service.price}</div>
                 <p className="text-gray-600 mb-6">{service.description}</p>
-                <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200">
+                <Link 
+                  to="/contact"
+                  className="block w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 text-center"
+                >
                   Get Quote
-                </button>
+                </Link>
               </div>
             ))}
           </div>
@@ -226,6 +231,20 @@ const Services = () => {
             All prices exclude VAT. 50% deposit required for development projects, balance on completion. 
             Annual hosting and domain fees payable upfront.
           </p>
+          <div className="mt-4 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/contact"
+              className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
+            >
+              Get Started Today
+            </Link>
+            <a
+              href="tel:0748953557"
+              className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors duration-200"
+            >
+              Call: 074 895 3557
+            </a>
+          </div>
         </div>
 
       </div>

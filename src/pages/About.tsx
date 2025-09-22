@@ -162,6 +162,22 @@ const About = () => {
               </p>
             </div>
           </div>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/services"
+              className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200"
+            >
+              View Our Plans
+            </Link>
+            <a
+              href="https://wa.me/27748953557"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-colors duration-200"
+            >
+              WhatsApp Us
+            </a>
+          </div>
         </section>
 
       </div>
