@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
+import JsonLd from '../components/JsonLd';
 import { Server, Shield, Clock, Headphones, CheckCircle, Star } from 'lucide-react';
 
 const Home = () => {
@@ -49,6 +51,14 @@ const Home = () => {
 
   return (
     <div className="bg-white">
+      <SEO 
+        title="Ubani Hosting - Professional Web Hosting in South Africa"
+        description="Professional web hosting solutions for South African businesses. Reliable, secure, and affordable hosting with 99.9% uptime guarantee and local ZAR pricing."
+        keywords="web hosting South Africa, domain registration, website hosting, ZAR pricing, local support, SSL certificates, 99.9% uptime"
+        url="https://ubanihosting.co.za/"
+      />
+      <JsonLd />
+      
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">

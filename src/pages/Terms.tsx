@@ -1,9 +1,17 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { FileText, AlertCircle, Shield, CreditCard } from 'lucide-react';
 
 const Terms = () => {
   return (
     <div className="bg-white py-12">
+      <SEO 
+        title="Terms of Service - Ubani Hosting"
+        description="Read Ubani Hosting's terms of service, including pricing, payment terms, service level agreements, and policies for web hosting services."
+        keywords="terms of service, hosting terms, web hosting policies, Ubani Hosting terms"
+        url="https://ubanihosting.co.za/terms"
+      />
+      
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Hero Section */}

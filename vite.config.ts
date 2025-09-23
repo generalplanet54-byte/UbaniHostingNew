@@ -3,9 +3,19 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/UbaniHostingNew/', // Set base for GitHub Pages
+  base: '/', // Production base path
   build: {
-    outDir: 'docs', // Output to 'docs' for GitHub Pages
+    outDir: 'dist', // Standard build output
+    sourcemap: false, // Disable source maps in production
+    minify: 'terser', // Use terser for better minification
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          ui: ['lucide-react']
+        }
+      }
+    }
   },
   plugins: [react()],
   optimizeDeps: {

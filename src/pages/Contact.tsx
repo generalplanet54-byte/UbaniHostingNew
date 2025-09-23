@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SEO from '../components/SEO';
 import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
 
 const Contact = () => {
@@ -72,6 +73,13 @@ const Contact = () => {
 
   return (
     <div className="bg-white py-12">
+      <SEO 
+        title="Contact Ubani Hosting - Get Support & Start Hosting"
+        description="Contact Ubani Hosting for web hosting support, new accounts, or general inquiries. Email: support@ubanihosting.co.za, Phone: 074 895 3557"
+        keywords="contact Ubani Hosting, web hosting support, hosting inquiries, South African hosting support"
+        url="https://ubanihosting.co.za/contact"
+      />
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Hero Section */}

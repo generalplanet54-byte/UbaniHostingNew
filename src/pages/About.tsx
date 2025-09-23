@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { Server, Users, Award, Clock } from 'lucide-react';
 
 const About = () => {
@@ -29,6 +30,13 @@ const About = () => {
 
   return (
     <div className="bg-white py-12">
+      <SEO 
+        title="About Ubani Hosting - South African Web Hosting Company"
+        description="Learn about Ubani Hosting, a South African web hosting company providing reliable hosting solutions since 2019. Meet our team and discover our mission."
+        keywords="about Ubani Hosting, South African hosting company, web hosting team, hosting company history"
+        url="https://ubanihosting.co.za/about"
+      />
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Hero Section */}

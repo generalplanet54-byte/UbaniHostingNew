@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { CheckCircle, Server, Globe, Shield, Code } from 'lucide-react';
 
 const Services = () => {
@@ -76,6 +77,13 @@ const Services = () => {
 
   return (
     <div className="bg-white py-12">
+      <SEO 
+        title="Web Hosting Services & Pricing - Ubani Hosting"
+        description="Professional web hosting plans starting from R2,100/year. Domain registration, website migration, and e-commerce solutions with transparent ZAR pricing."
+        keywords="web hosting plans, domain registration South Africa, website migration, e-commerce hosting, ZAR pricing"
+        url="https://ubanihosting.co.za/services"
+      />
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Hero Section */}
